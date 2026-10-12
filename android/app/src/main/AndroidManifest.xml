@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Release builds need network access to reach PokéAPI. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="pokemon_explorer"
+        android:label="Pokémon Explorer"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
